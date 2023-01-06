@@ -1,9 +1,10 @@
-* {
+body {
   margin: 0;
   padding: 0;
   font-family: "Proxima Nova", sans-serif;
   box-sizing: border-box;
-  background-image: url("img/background-image.jpg");
+  /* background-color: red; */
+  
 }
 html {
   scroll-behavior: smooth;
@@ -16,6 +17,7 @@ html {
   position: relative;
   text-align: center;
   color: white;
+  background-image: url("img/background-image.jpg");
   text-transform: uppercase;
 }
 
@@ -23,11 +25,25 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: sticky;
+  position: fixed;
   top: 0;
-  background-color: black;
-  opacity: 0.8;
   z-index: 1;
+  width: 100%;
+  background-color: black;
+}
+.combine{
+    background-color: black;
+}
+.navbar.scrolled{
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+
+}
+.navbar.scrolled a{
+    /* background-color: transparent; */
+    color: white;
+    transition: 0.3s;
 }
 .navbar ul {
   display: flex;
@@ -105,7 +121,7 @@ html {
   width: 100%;
   padding: 75px 0px;
   /* background-color: #040406; */
-  /* background-image: linear-gradient(rgba(206,36,2,.1), rgba(0,0,0,0.9)), url("img/background-image.jpg"); */
+  background-image: linear-gradient(rgba(206,36,2,.1), rgba(0,0,0,0.9)), url("img/background-image.jpg");
 }
 #aboutSection img {
   height: auto;
@@ -147,7 +163,7 @@ html {
 #portfolioSection {
   display: flex;
   flex-direction: column;
-  /* background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url("img/background-image.jpg"); */
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url("img/background-image.jpg");
   padding: 75px 0px;
 }
 
@@ -176,12 +192,13 @@ html {
   display: flex;
   flex-direction: column;
   padding: 75px 20px;
+  padding-bottom: 600px;
+  
 }
 .contactHeading {
   text-align: center;
   color: white;
   font-size: 75px;
-  margin-top: 20px;
 }
 .form {
   display: flex;
@@ -247,15 +264,27 @@ html {
   /* background: #140403; */
   /* background:white; */
 }
-.footerIcons {
+.footer  {
+width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   margin-top: 20px;
+  background-color: green;
 }
-.footerIcons a {
+.footer a img {
   text-decoration: none;
-  color: white;
-  padding: 0px 25px;
+  color: black;
+  /* padding: 0px 25px; */
   transition: all 0.5s ease;
+  height: 50px;
+  width: 50px;
+
+
 }
+.icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+

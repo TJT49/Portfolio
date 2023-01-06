@@ -9,6 +9,7 @@
 </head>
 <body>
     <!-- top info section -->
+    <div class = "combine">
     <nav class = "navbar">
         <ul>
             <li><a href = "#header">Home</a></li>
@@ -19,11 +20,13 @@
     </nav>
     <section id = "header">
         <div class = "bio">
-            <h1>Tinu <div class ="last">Thomas</div></h1>
+            <h1>Eric <div class ="last">Robbins</div></h1>
             <h3>Web Developer</h3>
-            <h3>Student & Siena College</h3>
+            <h3>Student & Culver College</h3>
         </div>
     </section>
+    </div>
+
         <!--------------->
 
 
@@ -33,7 +36,7 @@
                 <img src = "img/about-photo.jpg" alt = "About Photo">
                 <div class = "aboutMe">
                 <h2>About <div class = "last">Me</div></h2>
-                <p>Aspiring Computer Science student at Siena College, with minor in Data Science. I am interested in front-end web development as well as database management 
+                <p>Aspiring Computer Science student at Culver College, with minor in Data Science. I am interested in front-end web development as well as database management 
                     and am seeking opportunities related to these. Having worked in a fast-paced environment in the past, I am able to adapt to changes quickly while also 
                     maintaining both organizational and leadership skills. I've been using these skills at New York State's Office of Information Technology Services. I've 
                     been working as an intern within the Department of Transportation sector. I'm looking to showcase the skills I've learned while working as an intern 
@@ -64,9 +67,31 @@
                 </form>
         </section>
         <footer class = "footer">
-            <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Tinu Thomas</p>
-                <a href = "https://www.linkedin.com/in/tinu-thomas-5b1b1b1b4/" img src = "img/linkedin.png" alt = "Linkedin" class = "linkedin"></a>
-                <a href = "https://www.github.com/tjt49" img src = "img/github.png" alt = "Github" class = "github"></a>
-                <a href = "https://instagram.com/tthomas49" img src = "/img/instagram.png" alt = "Instagram" class = "instagram"></a>
+            <div class = "icons">
+                <a href = "#"><img src = "./icon/linkedin.png" alt = "Linkedin" class = "linkedin"/></a>
+                <a href = "#"><img src = "./icon/github.png" alt = "Github" class = "github"/></a>
+                <a href = "#"><img src = "./icon/instagram.png" alt = "Instagram" class = "instagram"/></a>
+                </div>
+            <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Eric Robbins</p>
+                
         </footer>
+        <script>
+            window.onscroll = function() {myFunction()};
+
+            var navbar = document.getElementsByClassName("navbar")[0];
+            // var sticky = navbar.offsetTop;]
+            console.log(navbar)
+
+            function myFunction() {
+            if (window.scrollY > window.innerHeight / 5) {
+                // navbar.classList.add("sticky")
+                navbar.classList.add("scrolled")
+
+            } else {
+                // navbar.classList.remove("sticky");
+                navbar.classList.remove("scrolled")
+
+            }
+            }
+        </script>
 </body>
