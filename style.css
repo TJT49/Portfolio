@@ -121,7 +121,7 @@ html {
   width: 100%;
   padding: 75px 0px;
   /* background-color: #040406; */
-  background-image: linear-gradient(rgba(206,36,2,.1), rgba(0,0,0,0.9)), url("img/background-image.jpg");
+  background-image: linear-gradient(rgba(206,36,2,0.1), rgba(0,0,0,0.5)), url("img/background-image.jpg");
 }
 #aboutSection img {
   height: auto;
@@ -163,7 +163,7 @@ html {
 #portfolioSection {
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url("img/background-image.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.1)), url("img/background-image.jpg");
   padding: 75px 0px;
 }
 
@@ -188,11 +188,12 @@ html {
   cursor: pointer;
 }
 
-.contact {
+#contact {
   display: flex;
   flex-direction: column;
   padding: 75px 20px;
-  padding-bottom: 600px;
+  /* padding-bottom: 600px; */
+  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url("img/background-image.jpg");
   
 }
 .contactHeading {
@@ -205,15 +206,16 @@ html {
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-  margin-top: 50px;
+  
+  /* margin-top: 50px; */
 }
 .formBox {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 25px;
-  margin: 12px;
+  padding: 35px;
+  margin: 8px;
   width: 500px;
   border: none;
   outline: none;
@@ -221,7 +223,8 @@ html {
   background: white;
 }
 #messageBox {
-  width: 40%;
+  width: 1000px;
+  height: 200px;
   padding: 25px;
   margin: 12px;
   border: none;
@@ -269,22 +272,24 @@ width: 100%;
   display: flex;
   align-items: center;
   /* justify-content: center; */
-  margin-top: 20px;
-  background-color: green;
+  /* margin-top: 20px; */
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(206,32,2,0.2)), url("img/background-image.jpg");
 }
 .footer a img {
   text-decoration: none;
   color: black;
   /* padding: 0px 25px; */
   transition: all 0.5s ease;
-  height: 50px;
-  width: 50px;
+  height: 25px;
+  width: 25px;
 
 
 }
 .icons{
     display: flex;
     justify-content: space-between;
+    width: 100px;
+    margin: 0 auto;
 }
 
 
