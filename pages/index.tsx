@@ -99,11 +99,11 @@ export default function Home() {
                 well as database management and am seeking opportunities related
                 to these. Having worked in a fast-paced environment in the past,
                 I am able to adapt to changes quickly while also maintaining
-                both organizational and leadership skills. I've been using these
-                skills at New York State's Office of Information Technology
-                Services. I've been working as an intern within the Department
-                of Transportation sector. I'm looking to showcase the skills
-                I've learned while working as an intern and expanding these
+                both organizational and leadership skills. I&apos;ve been using these
+                skills at New York State&apos;s Office of Information Technology
+                Services. I&apos;ve been working as an intern within the Department
+                of Transportation sector. I&apos;m looking to showcase the skills
+                I&apos;ve learned while working as an intern and expanding these
                 skills.
               </p>
             </div>
