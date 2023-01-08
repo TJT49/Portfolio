@@ -163,7 +163,7 @@ export default function Home() {
               <img src="./linkedin.png" alt="LinkedIn" />
             </a>
           </div>
-          <p>Copyright &copy;{getYear} Tinu Thomas</p>
+          <p>Copyright &copy;{getYear} Tinu J Thomas</p>
         </footer>
       </main>
     </>
