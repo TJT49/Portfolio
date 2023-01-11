@@ -55,7 +55,7 @@ export default function Home() {
       </Head>
       {/* @ts-ignore */}
       <main className={styles.main} ref={homeRef}>
-        <div className={styles.combine}>
+        <div className="bg-black">
           <nav className={scrolled ? styles.scrolled : styles.navbar}>
             <ul>
               <li>
@@ -73,27 +73,27 @@ export default function Home() {
             </ul>
           </nav>
           <div id={styles.headerDiv}>
-            <section id={styles.header}>
-              <div className={styles.bio}>
-                <h1>
-                  Tinu <div className={styles.last}>Thomas</div>
+            <section className = "bg-cover bg-center h-screen w-full relative text-center text- bg-[url('/background-image.jpg')] bg-white uppercase">
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-white uppercase">
+                <h1 className = "font-bold text-50px tracking-3px mt-20px">
+                  Tinu <div className="inline-block text-redColor">Thomas</div>
                 </h1>
-                <h3>Web Developer</h3>
-                <h3>Student & Siena College</h3>
+                <h3 className = "text-20px tracking-1px mt-10px font-bold" >Web Developer</h3>
+                <h3 className = "text-20px tracking-1px mt-10px font-bold">Student & Siena College</h3>
               </div>
             </section>
           </div>
         </div>
         {/* about section */}
         {/* @ts-ignore */}
-        <section id={styles.aboutSection} ref={aboutRef}>
-          <div className={styles.mainAbout}>
-            <img src="/about-photo.jpg" alt="About Photo" />
-            <div className={styles.aboutMe}>
-              <h2>
-                About <div className={styles.last}>Me</div>
+        <section className = "w-full p-aboutPadding bg-gradientImage  " ref={aboutRef}>
+          <div className= "w-1130px max-w-95 m-auto flex items-center justify-between">
+            <img src="/about-photo.jpg" alt="About Photo" className = "h-auto w-350px rounded-50" />
+            <div className="w-550px">
+              <h2 className = "font-bold text-white text-75px mb-20px" >
+                About <div className= "inline-block text-redColor">Me</div>
               </h2>
-              <p>
+              <p className = "text-white text-20px mb-45px ">
                 Aspiring Computer Science student at Siena College, with minor
                 in Data Science. I am interested in front-end web development as
                 well as database management and am seeking opportunities related

@@ -111,13 +111,12 @@
   color: white;
   text-transform: uppercase;
 }
-.bio h1 {
+/* .bio h1 {
   font-size: 50px;
   letter-spacing: 3px;
   margin-bottom: 20px;
-}
-.bio h2 {
-}
+} */
+
 .bio h4 {
   font-size: 20px;
   letter-spacing: 1px;
