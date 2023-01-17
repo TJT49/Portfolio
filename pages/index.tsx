@@ -86,7 +86,7 @@ export default function Home() {
         </div>
         {/* about section */}
         {/* @ts-ignore */}
-        <section className = "w-full p-aboutPadding bg-gradientImage  " ref={aboutRef}>
+        <section className = "w-full p-defaultPadding bg-gradientImage  " ref={aboutRef}>
           <div className= "w-1130px max-w-95 m-auto flex items-center justify-between">
             <img src="/about-photo.jpg" alt="About Photo" className = "h-auto w-350px rounded-50" />
             <div className="w-550px">
@@ -111,10 +111,10 @@ export default function Home() {
         </section>
         {/* portfolio section */}
         {/* @ts-ignore */}
-        <section id={styles.portfolioSection} ref={portfolioRef}>
-          <h1 className={styles.portfolioHeading}>Portfolio</h1>
-          <div className={styles.gallery}>
-            <img src="/portfolio1.jpg" alt="Portfolio 1" />
+        <section className = "flex flex-col bg-blackFade p-defaultPadding" ref={portfolioRef}>
+          <h1 className="text-center text-white text-75px mt-20px ">Portfolio</h1>
+          <div className="flex flex-wrap justify-around justify-around box-border">
+            <img className = "w-500px h-auto m-50px rounded-50px" src="/portfolio1.jpg" alt="Portfolio 1" />
           </div>
         </section>
         {/* contact section */}
