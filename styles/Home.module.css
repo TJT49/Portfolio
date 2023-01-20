@@ -307,3 +307,11 @@
   width: 100px;
   margin: 0 auto;
 }
+.lastFrame{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  height: 1000px;
+  margin: 0 auto;
+  border: 0;
+}

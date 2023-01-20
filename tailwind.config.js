@@ -13,6 +13,7 @@ module.exports = {
     backgroundImage: {
       'gradientImage' : 'linear-gradient(rgba(206, 36, 2, 0.1), rgba(0, 0, 0, 0.5)), url("/background-image.jpg")',
       'blackFade' : 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("/background-image.jpg")',
+      'contactFade': 'linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("../public/background-image.jpg");',
     },
     spacing: {
       '20px': '20px',
@@ -31,7 +32,8 @@ module.exports = {
       '3px': '3px',
     },
     padding: {
-      'defaultPadding': '75px 0px'
+      'defaultPadding': '75px 0px',
+      'contactPadding': '75px 20px',
     },
     width: {
       '1130px' : '1130px',
@@ -43,7 +45,9 @@ module.exports = {
       '95' : '95%',
     },
     borderRadius: {
-      '50' : '50%',
+      '50percent' : '50%',
+      '10' : '50px',
+
     },
     lineHeight: {
       '30' : '30px',

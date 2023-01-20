@@ -13,7 +13,7 @@ export default function Home() {
   const homeRef = useRef();
   const aboutRef = useRef();
   const portfolioRef = useRef();
-  const contactRef = useRef();
+  const resumeRef = useRef();
   const getYear = new Date().getFullYear();
   const [scrolled, setScrolled] = useState(false);
 
@@ -68,7 +68,7 @@ export default function Home() {
                 <a onClick={() => handleBackClick(portfolioRef)}>Portfolio</a>
               </li>
               <li>
-                <a onClick={() => handleBackClick(contactRef)}>Contact Me</a>
+                <a onClick={() => handleBackClick(resumeRef)}>Resume</a>
               </li>
             </ul>
           </nav>
@@ -86,9 +86,11 @@ export default function Home() {
         </div>
         {/* about section */}
         {/* @ts-ignore */}
-        <section className = "w-full p-defaultPadding bg-gradientImage  " ref={aboutRef}>
+        <section className = "w-full p-defaultPadding bg-gradientImage flex justify-center" ref={aboutRef}>
           <div className= "w-1130px max-w-95 m-auto flex items-center justify-between">
-            <img src="/about-photo.jpg" alt="About Photo" className = "h-auto w-350px rounded-50" />
+            <div className = "h-auto w-350px rounded-50percent">
+              <img src="/about-photo.jpg" alt="About Photo"/>
+            </div>
             <div className="w-550px">
               <h2 className = "font-bold text-white text-75px mb-20px" >
                 About <div className= "inline-block text-redColor">Me</div>
@@ -114,41 +116,16 @@ export default function Home() {
         <section className = "flex flex-col bg-blackFade p-defaultPadding" ref={portfolioRef}>
           <h1 className="text-center text-white text-75px mt-20px ">Portfolio</h1>
           <div className="flex flex-wrap justify-around justify-around box-border">
-            <img className = "w-500px h-auto m-50px rounded-50px" src="/portfolio1.jpg" alt="Portfolio 1" />
+            <img src="/portfolio1.jpg" className = "w-500px h-auto m-50px rounded-50px" alt="Portfolio 1" />
           </div>
         </section>
         {/* contact section */}
         {/* @ts-ignore */}
-        <section id={styles.contact} ref={contactRef}>
+        <section className = "flex flex-col p-contactPadding bg-blackFade " ref={resumeRef}>
           <h1 className={styles.contactHeading}>
-            Contact <div className={styles.last}>Me</div>
+            Resume
           </h1>
-          <form action="/index.tsx" method="POST" className={styles.form}>
-            <input
-              type="text"
-              name="name"
-              className={styles.formBox}
-              placeholder="Name"
-            ></input>
-            <input
-              type="email"
-              name="email"
-              className={styles.formBox}
-              placeholder="Email"
-            ></input>
-            <input
-              type="text"
-              name="subject"
-              className={styles.formBox}
-              placeholder="Subject"
-            ></input>
-            <textarea
-              name="message"
-              id={styles.messageBox}
-              placeholder="Message"
-            ></textarea>
-            <input type="submit" value="Send" id={styles.sendButton}></input>
-          </form>
+          <embed src="https://cdn.rawgit.com/TJT49/Portfolio/main/public/resume/TT%20Resume.pdf#toolbar=0&navpanes=0&scrollbar=0" className = {styles.lastFrame} />
         </section>
         {/* footer section */}
         <footer className={styles.footer}>
